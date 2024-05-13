@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarvalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 12:09:24 by acarvalh          #+#    #+#             */
-/*   Updated: 2024/04/17 12:09:24 by acarvalh         ###   ########.fr       */
+/*   Created: 2024/04/22 20:18:41 by acarvalh          #+#    #+#             */
+/*   Updated: 2024/04/22 20:18:42 by acarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,7 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i] != '\0')
+	while (*(s++))
 		i++;
 	return (i);
 }
-
-/*int main(void)
-{
-    char string1[] = "Hello";
-    printf("%d\n", ft_strlen(string1));
-}*/

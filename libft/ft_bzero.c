@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarvalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 12:09:24 by acarvalh          #+#    #+#             */
-/*   Updated: 2024/04/17 12:09:24 by acarvalh         ###   ########.fr       */
+/*   Created: 2024/04/22 20:14:25 by acarvalh          #+#    #+#             */
+/*   Updated: 2024/04/22 20:14:28 by acarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t	i;
 	unsigned char	*str;
+	size_t			i;
 
 	str = s;
 	i = 0;
 	while (i < n)
 	{
-		str[i] = 0;
+		str[i] = '\0';
 		i++;
 	}
 }

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarvalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 12:09:24 by acarvalh          #+#    #+#             */
-/*   Updated: 2024/04/17 12:09:24 by acarvalh         ###   ########.fr       */
+/*   Created: 2024/04/22 20:20:05 by acarvalh          #+#    #+#             */
+/*   Updated: 2024/04/22 20:20:07 by acarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,15 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	unsigned char	*str;
+	size_t	i;
+	char	*str;
 
-	str = (unsigned char *)s;
-	while (n--)
-		*str++ = (unsigned char)c;
+	i = 0;
+	str = s;
+	while (i < n)
+	{
+		str[i] = c;
+		i++;
+	}
 	return (s);
 }
-
-/*int main(void)
-{
-    char string1[] = "Hello, world";
-    printf("Before memset: %s\n", string1);
-    ft_memset(string1, '*', 5);
-    printf("After memset: %s\n", string1);
-    return(0);
-}*/

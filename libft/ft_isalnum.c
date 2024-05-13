@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarvalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 12:09:24 by acarvalh          #+#    #+#             */
-/*   Updated: 2024/04/17 12:09:24 by acarvalh         ###   ########.fr       */
+/*   Created: 2024/04/22 20:14:56 by acarvalh          #+#    #+#             */
+/*   Updated: 2024/04/22 20:14:57 by acarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-    if(ft_isalpha(c) || ft_isdigit(c))
-        return(1);
-    return(0);
+	if (ft_isalpha(c) || ft_isdigit(c))
+		return (1);
+	return (0);
 }

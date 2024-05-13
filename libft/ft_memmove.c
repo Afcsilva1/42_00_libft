@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarvalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 12:09:24 by acarvalh          #+#    #+#             */
-/*   Updated: 2024/04/17 12:09:24 by acarvalh         ###   ########.fr       */
+/*   Created: 2024/04/22 20:17:36 by acarvalh          #+#    #+#             */
+/*   Updated: 2024/04/22 20:17:38 by acarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,15 +27,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		d[n] = s[n];
 	return (dest);
 }
-
-/*int main(void)
-{
-
-    char src[] = "Helli";
-    char dest[] = "Hello World";
-    ft_memmove(dest, src, sizeof(src));
-    printf("src: %s\n", src);
-    printf("dest: %s\n", dest);
-
-    return 0;
-}*/
