@@ -1,32 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: acarvalh <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/22 20:19:14 by acarvalh          #+#    #+#             */
-/*   Updated: 2024/04/22 20:19:16 by acarvalh         ###   ########.fr       */
+/*   Created: 2024/05/16 20:20:05 by acarvalh          #+#    #+#             */
+/*   Updated: 2024/05/16 20:20:07 by acarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	n;
-
-	if (*little == 0)
-		return ((char *)big);
-	n = ft_strlen(little);
-	if (len == 0)
-		return (0);
-	while (*big && n <= len)
-	{
-		if (*big == *little && ft_strncmp(big, little, n) == 0)
-			return ((char *)big);
-		++big;
-		--len;
-	}
-	return (NULL);
+	write(fd, &c, 1);
 }
